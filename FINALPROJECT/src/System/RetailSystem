@@ -19,7 +19,7 @@ public class RetailSystem {
     private Menu menu;
 
     public RetailSystem() {
-        this.businessName = "MAGIC SHOP HAHAHAHHHAAAH";
+        this.businessName = "WIZARDS of BATONG MALAKE";
         this.businessLogoPath = "{LOGO_PATH}";
         this.users = new ArrayList<>();
         this.inventory = new Inventory();

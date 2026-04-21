@@ -3,10 +3,10 @@ package model;
 public class MenuItem {
     private String itemName;
     private String description;
-    private int price;
+    private double price;
     private double profitPercentage;
 
-    public MenuItem(String itemName, String description, int price){
+    public MenuItem(String itemName, String description, double price){
         this.itemName = itemName;
         this.description = description;
         this.price = price;
@@ -15,6 +15,6 @@ public class MenuItem {
 
   public String getItemName(){return itemName;}
   public String getDescription(){return description;}
-  public int getPrice(){return price;}
+  public double getPrice(){return price;}
   public double getProfitPercentage(){return profitPercentage;}
 }

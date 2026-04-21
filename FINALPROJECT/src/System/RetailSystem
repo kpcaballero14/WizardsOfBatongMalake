@@ -30,10 +30,10 @@ public class RetailSystem {
         users.add(new Manager("kirbym341", "123", "Kirby"));
         users.add(new Cashier("ewan123", "123", "EWAN"));
 
-        InventoryItem item1 = new InventoryItem("{ITEM_1}", "{CATEGORY_1}", 100, "{UNIT_1}", 10, 5.0);
+        InventoryItem item1 = new InventoryItem();
         inventory.addItem(item1);
 
-        MenuItem menuItem1 = new MenuItem("{MENU_NAME_1}", "{MENU_DESC_1}", 30);
+        MenuItem menuItem1 = new MenuItem();
         menu.addMenuItem(menuItem1);
     }
 

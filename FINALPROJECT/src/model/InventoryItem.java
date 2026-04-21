@@ -4,10 +4,10 @@ public class InventoryItem {
 		private String itemName;
 		private String description;
 		private int stocks;
-		private int price;
+		private double price;
 		private int ingredientUsage;
 
-		public InnventoryItem(String itemName, String description, int stocks, int price){
+		public InnventoryItem(String itemName, String description, int stocks, double price){
 				this.itemName = itemName;
 				this.description = description;
 				this.stocks = stocks;
@@ -18,6 +18,6 @@ public class InventoryItem {
 		public String getItemName(){return itemName;}
 		public String description(){return description;}
 		public int getStocks(){return stocks;}
-		public int getPrice(){return price;}
+		public double getPrice(){return price;}
 		public int getIngredientsUsage(){return ingredientsUsage;}
 }

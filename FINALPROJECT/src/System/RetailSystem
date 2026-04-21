@@ -1,1 +1,65 @@
+package system;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import model.Cashier;
+import model.Inventory;
+import model.InventoryItem;
+import model.Manager;
+import model.Menu;
+import model.MenuItem;
+import model.User;
+
+public class RetailSystem {
+    private String businessName;
+    private String businessLogoPath;
+    private List<User> users;
+    private Inventory inventory;
+    private Menu menu;
+
+    public RetailSystem() {
+        this.businessName = "MAGIC SHOP HAHAHAHHHAAAH";
+        this.businessLogoPath = "{LOGO_PATH}";
+        this.users = new ArrayList<>();
+        this.inventory = new Inventory();
+        this.menu = new Menu();
+    }
+
+    public void initializeDefaultData() {
+        users.add(new Manager("kirbym341", "123", "Kirby"));
+        users.add(new Cashier("ewan123", "123", "EWAN"));
+
+        InventoryItem item1 = new InventoryItem("{ITEM_1}", "{CATEGORY_1}", 100, "{UNIT_1}", 10, 5.0);
+        inventory.addItem(item1);
+
+        MenuItem menuItem1 = new MenuItem("{MENU_NAME_1}", "{MENU_DESC_1}", 30);
+        menu.addMenuItem(menuItem1);
+    }
+
+    public User login(String username, String password) {
+        for (User user : users) {
+            if (user.getUsername().equals(username) &&
+                user.getPassword().equals(password)) {
+                return user;
+            }
+        }
+        return null;
+    }
+
+    public String getBusinessName() {
+        return businessName;
+    }
+
+    public String getBusinessLogoPath() {
+        return businessLogoPath;
+    }
+
+    public Inventory getInventory() {
+        return inventory;
+    }
+
+    public Menu getMenu() {
+        return menu;
+    }
+}

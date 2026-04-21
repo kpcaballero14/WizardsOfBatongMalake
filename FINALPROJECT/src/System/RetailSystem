@@ -31,14 +31,15 @@ public class RetailSystem {
         users.add(new Cashier("ewan123", "123", "EWAN"));
 
         InventoryItem item1 = new InventoryItem();
-        inventory.addItem("Lizard Tail");
-        inventory.addItem("Cyclop's Eye");
-        inventory.addItem("Dragon's Tail");
-        inventory.addItem("Tears of a Child");
-        inventory.addItem("Siren's Heart");
-        inventory.addItem("Distilled Water");
-        inventory.addItem("Fish");
-        inventory.addItem("Siren's Scales");
+        inventory.addItem("Lizard Tail", "Still twitching like it forgot it’s no longer attached. Great for healing… slightly unsettling to watch.", 10, 69);
+        inventory.addItem("Cyclop's Eye", "Always staring, never blinking. It sees everything, yes, even that thing you’re trying to hide. Awkward.", 10, 1000);
+        inventory.addItem("Dragon's Tail", "A burnt piece that refuses to cool down. If it starts glowing brighter, run.", 10, 3000);
+        inventory.addItem("Tears of a Child", "Pure, innocent, and a little sad. Collecting them is the hard part… explaining it is harder.", 10, 1500);
+        inventory.addItem("Siren's Heart", "Beats slowly, like it’s thinking. May cause sudden attraction, poor decisions, and regret.", 10, 2000);
+        inventory.addItem("Distilled Water", "So clean it has no personality. Perfect for balancing chaos, or just diluting your bad ideas.", 10, 29);
+        inventory.addItem("Spirit", "A bottled “presence” that may or may not be judging you. Sometimes it rattles the glass… sometimes you do.", 10, 1750);
+        inventory.addItem("Fish", "A tiny orange fish that refuses to get lost, no matter what. Somehow brings luck, bravery, and main-character energy.", 10, 269);
+        inventory.addItem("Siren's Scales", "Pretty enough to trust, dangerous enough to regret it. Classic mistake.", 10, 670);
 
         MenuItem menuItem1 = new MenuItem();
         menu.addMenuItem("Potion of Regeneration");

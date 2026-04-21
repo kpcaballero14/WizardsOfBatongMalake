@@ -31,10 +31,22 @@ public class RetailSystem {
         users.add(new Cashier("ewan123", "123", "EWAN"));
 
         InventoryItem item1 = new InventoryItem();
-        inventory.addItem(item1);
+        inventory.addItem("Lizard Tail");
+        inventory.addItem("Cyclop's Eye");
+        inventory.addItem("Dragon's Tail");
+        inventory.addItem("Tears of a Child");
+        inventory.addItem("Siren's Heart");
+        inventory.addItem("Distilled Water");
+        inventory.addItem("Fish");
+        inventory.addItem("Siren's Scales");
 
         MenuItem menuItem1 = new MenuItem();
-        menu.addMenuItem(menuItem1);
+        menu.addMenuItem("Potion of Regeneration");
+        menu.addMenuItem("Potion of Strength");
+        menu.addMenuItem("Potion of Water Breathing");
+        menu.addMenuItem("Potion of Teleportation");
+        menu.addMenuItem("Potion of Love and Atttraction");
+        menu.addMenuItem("Magician's Elixir");
     }
 
     public User login(String username, String password) {

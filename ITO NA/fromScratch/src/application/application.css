@@ -1,0 +1,36 @@
+/* 
+   .root-screen is the main background style used by most screens
+   such as dashboard, sales, inventory, menu management, and cash management.
+   It applies background.png as the full-screen background image.
+*/
+.root-screen {
+    /* Sets the background image file */
+    -fx-background-image: url("background.png");
+
+    /* Prevents the image from repeating */
+    -fx-background-repeat: no-repeat;
+
+    /* Centers the image in the screen */
+    -fx-background-position: center center;
+
+    /* Stretches the image to fill the whole screen */
+    -fx-background-size: 100% 100%;
+}
+
+/* 
+   .login-screen is the background style used only for the login screen.
+   It applies login_background.png as the full-screen background image.
+*/
+.login-screen {
+    /* Sets the login screen background image file */
+    -fx-background-image: url("login_background.png");
+
+    /* Prevents the image from repeating */
+    -fx-background-repeat: no-repeat;
+
+    /* Centers the image in the screen */
+    -fx-background-position: center center;
+
+    /* Stretches the image to fill the whole screen */
+    -fx-background-size: 100% 100%;
+}
